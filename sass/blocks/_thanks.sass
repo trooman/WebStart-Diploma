@@ -1,0 +1,28 @@
+.thanks 
+  &-text 
+    display: flex
+    flex-direction: column
+    margin: auto
+    &__title
+      font-size: 30px
+      color: $text-color
+    &__link
+      width: 110px
+      padding: 10px
+      border: solid 1px $main-color
+      border-radius: 10px
+      color: $main-color 
+      text-transform: uppercase
+      &:hover
+        background-color: $main-color
+        color: white
+@media (max-width: 567px)
+  .thanks
+    &-text
+      &__title
+        font-size: 20px
+@media (max-width: 430px)
+  .thanks
+    &-text
+      &__title
+        font-size: 15px

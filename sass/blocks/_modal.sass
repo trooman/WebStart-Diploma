@@ -1,0 +1,98 @@
+.modal
+  font-family: 'Roboto', sans-serif
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.5)
+  display: none
+  z-index: 2
+  &_active
+    display: flex
+  &-dialog 
+    margin: auto
+    max-width: 450px
+    width: 90%
+    min-width: 200px
+    height: 500px
+    background-color: white
+    padding: 40px
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    border-radius: 10px
+    &__button
+      width: 300px
+      margin: auto
+      padding: 15px
+      border-radius: 5px
+      outline: none
+      background-color: $main-color
+      cursor: pointer
+      color: white
+      text-transform: uppercase
+    &__input 
+      display: flex
+      flex-direction: column
+      #username-error
+        position: absolute
+        left: 0
+        top: 0
+        color: red
+        margin-top: 200px
+        margin-left: 92px
+      #phone-error
+        position: absolute
+        left: 0
+        top: 0
+        color: red
+        margin-top: 293px
+        margin-left: 92px
+      #email-error
+        position: absolute
+        left: 0
+        top: 0
+        color: red
+        margin-top: 380px
+        margin-left: 92px
+    input 
+      outline: none
+      width: 300px
+      margin: auto
+      padding: 15px
+      border-radius: 5px
+      border-color: $main-color
+      margin-top: 10px
+      margin-bottom: 30px
+    &__title
+      text-align: center
+      font-weight: bold
+      text-transform: uppercase
+      font-size: 20px
+      color: $second-color
+      padding-bottom: 20px
+      border-bottom: 2px dashed $main-color 
+    &__close
+      position: absolute
+      top: 0
+      right: 0
+      background-color: $second-color
+      border-color: $main-color
+      color: white
+      outline: none
+@media (max-width: 430px)
+  .modal
+    &-dialog 
+      margin: auto
+      max-width: 350px
+      width: 90%
+      min-width: 200px
+      height: 500px
+      input 
+        width: 200px
+      &__title
+        font-size: 13px
+      &__button 
+        width: 200px

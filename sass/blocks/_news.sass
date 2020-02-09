@@ -1,0 +1,397 @@
+.news 
+  background-color: $header-color
+  padding-top: 80px
+  padding-bottom: 97px
+  &-common  
+    display: flex
+    justify-content: space-between
+  &-our
+    position: relative
+    &__stock
+      position: absolute
+      top: 140px
+      left: 22px
+      &__second
+        position: absolute
+        top: 140px
+        left: 330px
+    &__text
+      &__title
+        color: $text-color
+        font-weight: bold
+        font-size: 40px
+        position: relative
+        margin-bottom: 100px
+        &:after
+          border-bottom: 3px solid rgba(240, 240, 247, 1)
+          bottom: -30px
+          content: ""
+          height: 3px
+          position: absolute
+          width: 100px
+          left: 8%
+          transform: translateX(-50%)
+    &__blocks
+      display: flex
+      &__first
+        background-color: white
+        width: 276px
+        padding: 25px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        cursor: pointer
+        &:hover 
+          background-color: $main-color
+          color: white
+          transition: 0.1s
+        &:hover span
+          cursor: pointer
+          background-color: $main-color
+          color: white
+          transition: 0.2s
+        &:hover h3 
+          cursor: pointer
+          background-color: $main-color
+          color: white
+          transition: 0.2s
+        &__title
+          width: 150px
+          margin: 0
+          color: $text-color
+          font-size: 22px
+          line-height: 28px
+          margin-bottom: 26px
+          margin-top: 25px
+        &__description
+          width: 200px
+          color: $text-color
+          font-size: 14px
+          line-height: 24px
+          margin-bottom: 35px
+        &__anchor
+          color: $main-color
+          letter-spacing: -1px
+          font-weight: bold
+          text-transform: uppercase
+          position: relative
+          cursor: pointer
+          margin-bottom: 30px
+          font-size: 15px
+          &:hover
+            &::after
+              border-bottom: 2px solid white
+              bottom: -9px
+              content: ""
+              height: 3px
+              position: absolute
+              width: 53px
+              left: 50%
+              transform: translateX(-50%)
+      &__second
+        background-color: white
+        width: 276px
+        padding: 25px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        cursor: pointer
+        margin-left: 29px
+        &:hover 
+          background-color: $main-color
+          color: white
+          transition: 0.1s
+        &:hover span
+          cursor: pointer
+          background-color: $main-color
+          color: white
+          transition: 0.2s
+        &:hover h3 
+          cursor: pointer
+          background-color: $main-color
+          color: white
+          transition: 0.2s
+        &__title
+          width: 150px
+          margin: 0
+          color: $text-color
+          font-size: 22px
+          line-height: 28px
+          margin-bottom: 26px
+          margin-top: 25px
+        &__description
+          width: 200px
+          color: $text-color
+          font-size: 14px
+          line-height: 24px
+          margin-bottom: 43px
+        &__anchor
+          color: $main-color
+          text-transform: uppercase
+          font-weight: bold
+          position: relative
+          cursor: pointer
+          margin-bottom: 30px
+          &:hover
+            &::after
+              border-bottom: 2px solid $main-color
+              bottom: -9px
+              content: ""
+              height: 3px
+              position: absolute
+              width: 53px
+              left: 50%
+              transform: translateX(-50%)
+  &-announcements
+    display: flex
+    flex-direction: column
+    &__text
+      &__title
+        color: $text-color
+        font-weight: bold
+        font-size: 40px
+        position: relative
+        margin-bottom: 101px
+        margin-top: 27px
+        margin-left: 0px
+        &:after
+          border-bottom: 3px solid rgba(240, 240, 247, 1)
+          bottom: -30px
+          content: ""
+          height: 3px
+          position: absolute
+          width: 100px
+          left: 8%
+          transform: translateX(-50%)
+    &__video
+      padding: 25px 30px
+      background-color: white
+      position: relative
+      &__background
+        position: absolute
+        top: 322px
+        left: 190px
+        width: 195px
+        height: 50px
+        border-radius: 24px
+        background-color: white
+        display: flex
+        align-items: center
+        justify-content: center
+        &__facebook
+          margin: 0 15px
+      &__description
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 20px
+        &__about  
+          margin-bottom: 28px
+          &__text
+            font-size: 22px
+            font-weight: bold
+        &__navigation
+          display: flex
+          align-items: center
+          text-transform: uppercase
+          &__previous
+            color: $news-text-color
+          &__next
+            color: $news-text-color
+          &__line
+            border-left: solid 1px
+            border-color: $news-text-color
+            height: 15px
+            margin-left: 5px
+            margin-right: 5px
+@media (max-width: 1200px)
+  .news
+    &-common
+      flex-wrap: wrap
+    &-our
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      margin: auto
+      &__stock
+        &__second
+          left: 510px
+      &__blocks
+        &__first
+          margin-right: 200px
+          &__description
+            // font-size: 14px
+            // width: 170px
+        &__second
+          // width: 200px
+          // margin-right: 25px
+    &-announcements
+      display: flex
+      &__text
+        &__title
+          margin-top: 60px
+          margin-left: 90px
+      &__video  
+        margin-left: 160px
+@media (max-width: 960px)
+  .news 
+    padding-top: 40px
+    &-our 
+      &__text
+        &__title
+          &:after
+            border-bottom: none
+      &__stock
+        &__second
+          left: 460px
+      &__blocks
+        &__first 
+          margin-right: 150px
+          &:hover 
+            background-color: white
+            color: $text-color
+          &:hover span
+            cursor: pointer
+            background-color: white
+            color: $text-color
+          &:hover h3 
+            cursor: pointer
+            background-color: white
+            color: $text-color
+          // width: 200px
+          &__anchor
+            color: $main-color
+            text-transform: uppercase
+            font-weight: bold
+            position: relative
+            cursor: pointer
+            margin-bottom: 30px
+            &:hover
+              &::after
+                border-bottom: none
+        &__second
+          &:hover 
+            background-color: white
+            color: $text-color
+          &:hover span
+            cursor: pointer
+            background-color: white
+            color: $text-color
+          &:hover h3 
+            cursor: pointer
+            background-color: white
+            color: $text-color
+          // width: 200px
+          &__anchor
+            color: $main-color
+            text-transform: uppercase
+            font-weight: bold
+            position: relative
+            cursor: pointer
+            margin-bottom: 30px
+            &:hover
+              &::after
+                border-bottom: none
+    &-announcements
+      &__text
+        &__title
+          margin-left: 15px
+          &:after 
+            border-bottom: none
+      &__video  
+        margin-left: 70px
+@media (max-width: 768px)
+  .news
+    &-our
+      &__stock
+        left: 35px
+        &__second
+          left: 35px
+          top: 645px
+      &__blocks
+        flex-direction: column
+        margin-left: 20px
+        &__first
+          margin-right: 0
+          margin-bottom: 40px
+          // width: 200px
+          &__description
+            // font-size: 14px
+            // width: 170px
+        &__second
+          margin: 0
+          // width: 200px
+          // margin-right: 25px
+    &-announcements
+      display: flex
+      &__text
+        &__title
+          margin-left: 170px
+          margin-top: 35px
+          margin-bottom: 40px
+      &__video  
+        margin-left: 50px
+        // padding: 2px 2px 20px 2px
+        &__link
+          iframe 
+            width: 400px
+            height: 230px
+        &__background
+          top: 225px
+          left: 125px
+@media (max-width: 567px)
+  .news
+    &-announcements
+      &__text
+        &__title
+          margin-left: 110px
+      &__video  
+        margin-left: -20px
+        // padding: 2px 2px 20px 2px
+        &__link
+          iframe 
+            width: 400px
+            height: 230px
+        &__background
+          top: 225px
+          left: 125px
+@media (max-width: 460px)
+  .news
+    &-announcements
+      display: flex
+      &__text
+        &__title
+          margin-left: 110px
+          margin-top: 35px
+          margin-bottom: 40px
+      &__video  
+        margin-left: 50px
+        // padding: 2px 2px 20px 2px
+        &__link
+          iframe 
+            width: 270px
+            height: 180px
+        &__background
+          top: 170px
+          left: 60px
+@media (max-width: 430px)
+  .news
+    padding-bottom: 20px
+    padding-top: 20px
+    &-announcements
+      display: flex
+      &__text
+        &__title
+          margin-left: 70px
+          margin-top: 35px
+          margin-bottom: 40px
+      &__video  
+        margin-left: 5px
+        // padding: 2px 2px 20px 2px
+        &__link
+          iframe 
+            width: 270px
+            height: 180px
+        &__background
+          top: 170px
+          left: 60px

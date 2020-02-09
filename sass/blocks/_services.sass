@@ -1,0 +1,218 @@
+.services
+  background-color: $header-color
+  padding-bottom: 174px
+  padding-top: 80px
+  &-head  
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 45px
+    &__top
+      &__title
+        font-weight: bold
+        font-size: 41px
+        color: $text-color
+        position: relative
+        &:after
+          border-bottom: 3px solid rgba(240, 240, 247, 1)
+          bottom: -19px
+          content: ""
+          height: 3px
+          position: absolute
+          width: 100px
+          left: 19%
+          transform: translateX(-50%)
+      &__menu
+        ul
+          display: flex
+          li 
+            font-size: 14px
+            text-transform: uppercase
+            font-weight: bold
+            line-height: 24px
+            &:active
+            a
+              color: $text-color
+              padding: 15px
+              &:hover 
+                background-color: $main-color
+                color: white
+                border-radius: 20px
+  &-content 
+    display: flex
+    justify-content: space-between
+    &__column 
+      text-align: center
+      width: 276px
+      background-color: white
+      box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.05)
+      color: $text-color
+      &:hover
+        cursor: pointer
+        background-color: $main-color
+        color: white
+        transition: 0.1s
+      &:hover h4
+        cursor: pointer
+        background-color: $main-color
+        color: white
+        transition: 0.3s
+      &:hover span
+        cursor: pointer
+        background-color: $main-color
+        color: white
+        transition: 0.3s
+    &__title
+      margin: auto
+      margin-top: 35px
+      margin-bottom: 12px
+      font-size: 22px
+      font-weight: bold
+      line-height: 28px
+      color: $main-color
+    &__subtitle
+      display: block
+      margin-bottom: 23px
+      position: relative
+      font-size: 15px
+      line-height: 24px
+      &::after
+        border-bottom: 2px solid $header-color
+        bottom: -16px
+        content: ""
+        height: 3px
+        position: absolute
+        width: 53px
+        left: 50%
+        transform: translateX(-50%)
+    &__price
+      &__tag
+        display: block
+        margin-bottom: 5px
+        margin-top: 38px
+    &__price
+      font-size: 25px
+      font-weight: bold
+      color: $main-color
+      display: block
+      margin-bottom: 40px
+
+@media (max-width: 1200px)
+  .services 
+    &-head
+      &__top  
+        &__title
+          font-size: 30px
+          &:after
+            border-bottom: 3px solid rgba(240, 240, 247, 1)
+            bottom: -9px
+            content: ""
+            height: 3px
+            position: absolute
+            width: 100px
+            left: 29%
+            transform: translateX(-50%)
+    &-content 
+      flex-wrap: wrap
+      justify-content: space-around
+      &__column 
+        &:last-child 
+          margin-top: 40px
+@media (max-width: 960px)
+  .services 
+    padding-bottom: 80px
+    padding-top: 40px
+    &-head
+      &__top  
+        &__title
+          font-size: 30px
+          &:after
+            border-bottom: 3px solid rgba(240, 240, 247, 1)
+            bottom: -9px
+            content: ""
+            height: 3px
+            position: absolute
+            width: 100px
+            left: 29%
+            transform: translateX(-50%)
+        &__menu
+          font-size: 10px
+          ul 
+            li 
+              a
+                &:hover 
+                  background-color: $header-color
+                  color: $text-color
+                  border-radius: 20px
+    &-content 
+      flex-wrap: wrap
+      justify-content: space-around
+      &__column 
+        &:last-child 
+          margin-top: 40px
+        &:nth-child(3)
+          margin-top: 40px
+        &:hover
+          cursor: pointer
+          background-color: white
+          color: white
+        &:hover h4
+          cursor: pointer
+          background-color: white
+          color: $main-color
+        &:hover span
+          cursor: pointer
+          background-color: white
+          color: $text-color
+@media (max-width: 768px)
+  .services 
+    &-head
+      display: flex
+      flex-direction: column
+      &__top  
+        &__title
+          font-size: 30px
+          &:after
+            border-bottom: none
+        &__menu
+          font-size: 10px
+          ul 
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding-left: 0
+            li 
+              margin-bottom: 15px
+              margin-left: 0
+              a
+                font-size: 14px
+                &:hover 
+                  background-color: $header-color
+                  color: $text-color
+                  border-radius: 20px
+    &-content 
+      flex-wrap: wrap
+      justify-content: space-around
+      &__column 
+        &:last-child 
+          margin-top: 40px
+        &:nth-child(2)
+          margin-top: 40px
+        &:nth-child(3)
+          margin-top: 40px
+        &:hover
+          cursor: pointer
+          background-color: white
+          color: white
+        &:hover h4
+          cursor: pointer
+          background-color: white
+          color: $main-color
+        &:hover span
+          cursor: pointer
+          background-color: white
+          color: $text-color
+
+
+
+          

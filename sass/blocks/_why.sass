@@ -1,0 +1,126 @@
+.why
+  color: $text-color
+  &-text 
+    margin-top: 80px
+    margin-bottom: 40px
+    &__title
+      font-weight: bold
+      font-size: 46px
+      position: relative
+      &:after
+        border-bottom: 3px solid $header-color
+        bottom: -9px
+        content: ""
+        height: 3px
+        position: absolute
+        width: 100px
+        left: 4.4%
+        transform: translateX(-50%)
+  &-description
+    display: flex
+    justify-content: space-between
+    margin-bottom: 110px
+    position: relative
+    &__anchor
+      color: $main-color
+      text-transform: uppercase
+      font-weight: bold
+      position: relative
+      &:hover
+        &::after
+          border-bottom: 2px solid $main-color
+          bottom: -9px
+          content: ""
+          height: 3px
+          position: absolute
+          width: 53px
+          left: 50%
+          transform: translateX(-50%)
+    &__title
+      margin-top: 34px
+      margin-bottom: 42px
+      font-size: 25px
+      width: 260px
+      text-align: center
+    &__definition
+      font-size: 15px
+      text-align: center
+      width: 372px
+    &__innovation
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__expirience
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__services
+      display: flex
+      flex-direction: column
+      align-items: center
+
+@media (max-width: 1200px)
+  .why
+    &-description
+      flex-wrap: wrap
+      justify-content: space-around
+    &-text
+      &__title
+        position: relative
+        font-size: 30px
+        &:after
+          border-bottom: 3px solid $header-color
+          bottom: -9px
+          content: ""
+          height: 3px
+          position: absolute
+          width: 100px
+          left: 5.5%
+          transform: translateX(-50%)
+@media (max-width: 960px)
+  .why
+    &-description
+      flex-direction: column
+      margin-bottom: 50px
+      &__anchor
+        &:hover
+          &::after
+            border-bottom: none
+    &-text 
+      &__title
+        position: relative
+        &:after
+          border-bottom: none
+@media (max-width: 768px)
+  .why
+    &-text
+      &__title 
+        font-size: 30px
+        position: relative
+        &:after
+          border-bottom: none
+@media (max-width: 576px)
+  .why
+    &-text
+      &__title 
+        font-size: 30px
+        position: relative
+        text-align: center
+        &:after
+          border-bottom: none
+
+@media (max-width: 430px)
+  .why
+    &-description
+      flex-direction: column
+      align-content: center
+      &__title
+        font-size: 20px
+      &__definition
+        width: 310px
+    &-text
+      &__title 
+        font-size: 30px
+        position: relative
+        &:after
+          border-bottom: none

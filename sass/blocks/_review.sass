@@ -1,0 +1,91 @@
+.review
+  background: url(../img/review/bg.jpg) no-repeat center top / cover
+  padding-top: 70px
+  padding-bottom: 170px
+  &-text 
+    margin-bottom: 80px
+    &__title
+      text-align: center
+      font-size: 40px
+      color: white
+      position: relative
+      &:after
+        margin-bottom: -30px
+        border-bottom: 3px solid rgba(240, 240, 247, 1)
+        bottom: -9px
+        content: ""
+        height: 3px
+        position: absolute
+        width: 100px
+        left: 49%
+        transform: translateX(-50%)
+  &-content 
+    display: flex
+    justify-content: space-between
+    &__opinion 
+      padding: 100px 40px 50px 35px
+      width: 390px
+      background-color: white
+      position: relative
+      color: #979797
+      line-height: 24px
+      font-size: 15px
+      margin-top: 5px
+    &__stars  
+      position: absolute
+      margin-top: 65px
+      margin-left: 35px
+      z-index: 1
+    // #triangle_down 
+    //   width: 0
+    //   height: 0
+    //   border-top: 50px solid white
+    //   border-left: 40px solid transparent
+    //   border-right: 40px solid transparent
+    //   position: absolute
+    //   bottom: 250px
+    &__user
+      display: flex
+      align-items: center
+      margin-left: 25px
+      padding-top: 20px
+      &__text
+        display: flex
+        flex-direction: column
+        color: white
+        margin-left: 20px
+      &__name
+        font-size: 22px
+        font-weight: bold
+        line-height: 28px
+      &__job
+        margin-top: 10px
+        font-size: 14px
+@media (max-width: 1200px)
+  .review
+    padding-bottom: 100px
+    padding-top: 40px
+    &-content 
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+      &__column 
+        margin-top: 20px
+@media (max-width: 567px)
+  .review 
+    &-text 
+      margin-bottom: 45px
+      &__title
+        font-size: 25px
+@media (max-width: 430px)
+  .review
+    &-text 
+      &__title
+        font-size: 20px
+    &-content 
+      &__opinion 
+        padding: 102px 35px 56px 35px
+        width: 300px
+        font-size: 13px
+      &__user
+        margin-left: 15px

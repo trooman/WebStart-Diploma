@@ -1,0 +1,122 @@
+.footer
+  background-color: $second-color
+  padding-top: 76px
+  padding-bottom: 111px
+  &-main 
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    color: white
+    border-bottom: 2px solid rgba(129, 110, 144, 1)
+    padding-bottom: 46px
+    &__logotype
+      display: flex
+      align-items: center
+    &__titles
+      display: flex
+      flex-direction: column
+      margin-left: 10px
+    &__title
+      font-size: 25px
+      margin-bottom: 0
+    &__subtitle
+      font-size: 11px
+      letter-spacing: 1.37px
+    &__definition
+      font-size: 14px
+      line-height: 24px
+      display: block
+      width: 244px
+      margin-top: 49px
+      margin-bottom: 45px
+    &__social
+      &__icons
+        margin-right: 13px
+
+    &__about 
+      display: flex
+      flex-direction: column
+      &__title
+        font-size: 36px
+        font-weight: 400
+        margin-bottom: 0
+      &__description
+        font-size: 14px
+        margin-top: 45px
+        a 
+          color: white
+          cursor: pointer
+    &__services 
+      display: flex
+      flex-direction: column
+      &__title
+        font-size: 36px
+        font-weight: 400
+        margin-bottom: 0
+      &__description
+        font-size: 14px
+        margin-top: 45px
+        a 
+          color: white
+    &__section 
+      display: flex
+      flex-direction: column
+      margin-top: 71px
+      &__description
+        font-size: 14px
+        margin-top: 45px
+        a 
+          color: white
+    &__glo
+      display: flex
+      justify-content: flex-end
+      margin-top: 50px
+      &__academy
+        font-size: 15px
+        color: white
+        &__last
+          font-size: 15px
+          color: white
+          margin-left: 30px
+@media (max-width: 960px)
+  .footer
+    &-main 
+      flex-wrap: wrap
+      &__section
+        display: none
+@media (max-width: 768px)
+  .footer
+    &-main 
+      &__services
+        margin-top: 40px
+      &__section 
+        margin-right: 85px
+        margin-top: 110px
+@media (max-width: 567px)
+  .footer
+    &-main 
+      &__info
+        margin-left: 50px
+      &__about  
+        margin-top: 10px
+        margin-left: 50px
+        &__description
+          margin-top: 15px
+      &__services
+        margin-top: 10px
+        margin-left: 50px
+        &__description  
+          margin-top: 15px
+      &__section 
+        display: none
+        margin-left: 50px
+      &__glo
+        margin-left: 50px
+        flex-direction: column
+        justify-content: flex-start
+        margin-left: 50px
+        &__academy
+          &__last 
+            margin-left: 0
+            margin-top: 10px
+      

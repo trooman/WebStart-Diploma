@@ -1,0 +1,183 @@
+.navbar
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  margin-top: 8px
+  margin-bottom: 18px
+  &-logo 
+    margin-right: 11px
+  &-main 
+    display: flex
+  &-text 
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    color: $text-color
+    &__title 
+      margin-bottom: 0
+      text-transform: uppercase
+      font-size: 31px
+    &__description
+      text-transform: uppercase
+      font-size: 14px
+      letter-spacing: 1.56px
+  &-navigation  
+    display: flex
+    &__icon
+      display: none
+      width: 45px
+      height: 35px
+      position: relative
+      cursor: pointer
+      span 
+        display: block
+        position: absolute
+        height: 9px
+        width: 100%
+        background: #333333
+        border-radius: 9px
+        opacity: 1
+        left: 0
+        transform: rotate(0deg)
+        transition: .25s ease-in-out
+        &:nth-child(1)
+          top: 0px
+        &:nth-child(2)
+          top: 13px
+        &:nth-child(3)
+          top: 13px
+        &:nth-child(4)
+          top: 26px
+    &__list
+      display: flex
+      text-transform: uppercase
+      li
+        position: relative
+        margin-left: 35px
+        margin-bottom: 6px
+        &:hover
+          &::after
+            border-bottom: 3px solid $main-color
+            bottom: -9px
+            content: ""
+            height: 3px
+            position: absolute
+            width: 40px
+            left: 50%
+            transform: translateX(-50%)
+        a 
+          color: $text-color
+          font-weight: bold
+          font-size: 14px
+          &:hover
+            color: $main-color
+
+  &-image 
+    padding: 13px
+    background-color: $main-color
+    border-radius: 50%
+    margin-left: 70px
+    margin-bottom: 6px
+    &:hover
+      opacity: .5
+      cursor: pointer
+
+  &-navigation
+    &__menu
+      display: none
+
+@media (max-width: 1200px)
+  .container
+    width: 950px
+  .navbar
+    &-text 
+      &__title
+        font-size: 18px
+      &__description 
+        font-size: 7px
+    &-navigation
+      &__list
+        font-size: 11px
+        li 
+          margin-left: 20px
+    &-phone 
+
+@media (max-width: 960px)
+  .container
+    width: 750px
+  .navbar
+    &-text 
+      display: none
+    &-navigation 
+      &__list 
+        li 
+          margin-left: 10px
+@media (max-width: 768px)
+  .container 
+    width: 550px
+  .navbar
+    align-items: flex-start
+    justify-content: space-between
+    // position: relative
+    &-phone 
+      margin-top: 30px
+      // display: none
+    &-logo 
+    &-navigation
+      display: flex
+      flex-direction: column
+      align-items: center
+      // position: absolute
+      &__list
+        display: none
+        flex-direction: column
+        padding-left: 0
+        border: solid 2px $second-color
+        background-color: white
+        border-radius: 5px
+        li 
+          font-size: 20px
+          margin-bottom: 10px
+          padding: 5px
+          a 
+            color: $main-color
+      &__menu
+        display: inline-block
+        cursor: pointer
+        margin-top: 30px
+        padding: 4px 37px
+        font-size: 30px
+        color: $main-color
+        font-weight: bold
+        text-transform: uppercase
+        border: solid 2px $main-color
+        border-radius: 5px
+@media (max-width: 960px)
+  .navbar
+    &-navigation
+      li
+        &:hover
+          &::after
+            border-bottom: none
+        a 
+          color: $text-color
+          font-weight: bold
+          &:hover
+            color: $text-color
+@media (max-width: 567px)
+  .container
+    width: 400px
+    .navbar
+      align-items: flex-start
+      &-phone 
+        display: none
+      &-navigation 
+        align-items: flex-end
+        margin-right: 10px
+      &-logo 
+        margin-left: 10px
+@media (max-width: 430px)
+  .container
+    width: 320px
+  .navbar 
+    margin-bottom: 20px

@@ -1,0 +1,53 @@
+.information
+  background-color: $information-bgc
+  &-content 
+    padding-top: 137px
+    padding-bottom: 120px
+    display: flex
+    justify-content: space-between
+    margin-left: 55px
+    margin-right: 60px
+    &__section  
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__info
+      margin-top: 19px
+      font-size: 54px
+      font-weight: bold
+      color: $information-info
+    &__what
+      color: white
+      margin-top: 4px
+      font-size: 20px
+      line-height: 28px
+@media (max-width: 960px)
+  .information
+    &-content 
+      padding-top: 50px
+      padding-bottom: 50px
+      flex-wrap: wrap
+      &__section 
+        width: 300px
+        &:nth-child(3)
+          margin-top: 70px
+        &:nth-child(4)
+          margin-top: 70px
+@media (max-width: 768px)
+  .information
+    &-content 
+      flex-wrap: wrap
+      margin-left: 110px
+      &__section 
+        width: 320px
+        &:nth-child(2)
+          margin-top: 70px
+        &:nth-child(3)
+          margin-top: 70px
+        &:nth-child(4)
+          margin-top: 70px
+@media (max-width: 567px)
+    .information
+      &-content 
+        flex-wrap: wrap
+        margin-left: 70px

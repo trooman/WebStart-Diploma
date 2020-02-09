@@ -1,0 +1,63 @@
+.header
+  background-color: $header-color
+  padding: 10px 0
+  &-block 
+    display: flex
+    justify-content: space-between
+    color: #323232
+    &__info
+      display: flex
+      align-items: flex-start
+      &__phone
+        margin-right: 38px
+        margin-left: 13px
+        color: $text-color
+      &__adress
+        margin-left: 13px
+    &__menu
+      display: flex
+      align-items: center
+      &__login
+        margin-right: 9px
+        font-size: 14px
+        font-weight: bold
+        a 
+          color: $text-color
+      &__registration
+        margin-left: 9px
+        font-size: 14px
+        font-weight: bold
+        a 
+          color: $text-color
+      &__line
+        border-left: solid 1px
+        border-color: #bcbcbc
+        height: 100%
+
+@media (max-width: 1200px)
+  .header
+    &-block 
+      justify-content: space-between
+@media (max-width: 960px)
+  .container 
+    width: 750px
+@media (max-width: 768px)
+  .container 
+    width: 400px
+    .header
+      &-block 
+        &__pointer  
+          display: none
+        &__info 
+          align-items: flex-end
+          &__phone
+            font-size: 13px 
+          &__adress 
+            font-size: 13px
+            display: none
+
+@media (max-width: 567px)
+  .header
+    &-block 
+      justify-content: space-around
+        
